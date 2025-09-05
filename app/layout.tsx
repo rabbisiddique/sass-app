@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   title: "Converso",
   description: "Real-time AI Teaching Platform",
 };
+export const dynamic = "force-dynamic";
 
 export default function RootLayout({
   children,
