@@ -11,7 +11,7 @@ interface essionPageProps {
 const Session = async ({ params }: essionPageProps) => {
   const { id } = await params;
   const companion = await getCompanion(id);
-  const { name, subject, title, topic, duration } = companion;
+  const { name, subject, topic, duration } = companion;
   const user = await currentUser();
   if (!user) redirect("/sign-in");
   if (!name) redirect("/");
